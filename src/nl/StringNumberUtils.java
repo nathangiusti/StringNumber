@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 /**
  * A "static" utility class for performing methods on multiple StringNumbers
- * @author bigba
+ * @author Nathan Giusti
  *
  */
 public final class StringNumberUtils {
@@ -42,10 +42,10 @@ public final class StringNumberUtils {
 	/**
 	 *  This method adds together two instances of StringNumber by incrementing the first argument (base string) by the second argument (increment string)
 	 *  
-	 *  If the increment string character is an digit, the dominant string character will be incremented forward by the integer value of the digit.
-	 *  If the increment string character is a lower case letter, the dominant string character will be incremented forward by the relative position of the increment string from 'a'.
-	 *  If the increment string character is an upper case letter, the dominant string character will be incremented forward by the relative position of the increment string from 'A'.
-	 *  If the increment string character is any other value, the dominant string character will be incremented forward by the ASCII value of the increment character.
+	 *  If the increment string character is an digit, the base string character will be incremented forward by the integer value of the digit.
+	 *  If the increment string character is a lower case letter, the base string character will be incremented forward by the relative position of the increment string from 'a'.
+	 *  If the increment string character is an upper case letter, the base string character will be incremented forward by the relative position of the increment string from 'A'.
+	 *  If the increment string character is any other value, the base string character will be incremented forward by the ASCII value of the increment character.
 	 *  
 	 *  If the base string character is a digit, the string will roll over at '9' back to '0'. 
 	 *  If the base string character is a lower case letter, the string will roll over at 'z' back to 'a'.
@@ -102,10 +102,10 @@ public final class StringNumberUtils {
 	/**
 	 *  This method multiplies together two instances of StringNumber by multiplying the first argument (base string) by the second argument (increment string)
 	 *  
-	 *  If the increment string character is an digit, the dominant string character will be multiplied by the integer value of the digit.
-	 *  If the increment string character is a lower case letter, the dominant string character will be multiplied by the relative position of the increment string from 'a'.
-	 *  If the increment string character is an upper case letter, the dominant string character will be multiplied by the relative position of the increment string from 'A'.
-	 *  If the increment string character is any other value, the dominant string character will be multiplied by the ASCII value of the increment character.
+	 *  If the increment string character is an digit, the base string character will be multiplied by the integer value of the digit.
+	 *  If the increment string character is a lower case letter, the base string character will be multiplied by the relative position of the increment string from 'a'.
+	 *  If the increment string character is an upper case letter, the base string character will be multiplied by the relative position of the increment string from 'A'.
+	 *  If the increment string character is any other value, the base string character will be multiplied by the ASCII value of the increment character.
 	 *  
 	 *  If the base string character is a digit, the string will roll over at '9' back to '0'. 
 	 *  If the base string character is a lower case letter, the string will roll over at 'z' back to 'a'.
